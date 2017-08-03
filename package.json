@@ -1,0 +1,35 @@
+{
+  "name": "lightsbee-portfolio",
+  "version": "1.0.0",
+  "description": "lightsbee-portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://lightsbee@bitbucket.org/lightsbee/lightsbee-portfolio.git"
+  },
+  "keywords": [
+    "lightsbee",
+    "portfolio"
+  ],
+  "author": "lightsbee",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/lightsbee/lightsbee-portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ejsmin": "0.0.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-minify-ejs": "^1.0.3"
+  },
+  "dependencies": {
+    "gulp-ejs": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "yarn": "^0.24.5"
+  }
+}

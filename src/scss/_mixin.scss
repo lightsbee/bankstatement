@@ -1,0 +1,131 @@
+@mixin box-shadow($variable...){
+	box-shadow: $variable;
+	-webkit-box-shadow: $variable;
+	-moz-box-shadow: $variable;
+}
+
+@mixin rotationY($deg){
+	-ms-transform: rotateY($deg);
+	-webkit-transform: rotateY($deg);
+	transform: rotateY($deg);
+}
+
+@mixin translate($horizontal, $vertical) {
+	transform: translate($horizontal, $vertical);
+	-webkit-transform: translate($horizontal, $vertical);
+	-ms-transform: translate($horizontal, $vertical);
+}
+
+@mixin translateX($horizontal) {
+	transform: translateX($horizontal);
+	-webkit-transform: translateX($horizontal);
+	-ms-transform: translateX($horizontal);
+}
+
+@mixin translateY($vertical) {
+	transform: translateY($vertical);
+	-webkit-transform: translateY($vertical);
+	-ms-transform: translateY($vertical);
+}
+
+@mixin linear-gradient($from, $to) {
+	background: $to;
+	background: -ms-linear-gradient($from, $to);
+	background: -webkit-linear-gradient($from, $to);
+	background: -o-linear-gradient($from, $to);
+	background: -moz-linear-gradient($from, $to);
+	background: linear-gradient($from, $to);
+}
+
+@mixin rotation($deg) {
+	-ms-transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+	transform: rotate($deg);
+}
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content
+	}
+	@-moz-keyframes #{$name} {
+		@content
+	}
+	@-ms-keyframes #{$name} {
+		@content
+	}
+	@keyframes #{$name} {
+		@content
+	}
+}
+
+@mixin animation($variable) {
+	animation: $variable;
+	-webkit-animation: $variable;
+	-moz-animation: $variable;
+	-o-animation: $variable;
+}
+
+@mixin transition($variable) {
+	-webkit-transition: $variable;
+	-moz-transition: $variable;
+	-o-transition: $variable;
+	-ms-transition: $variable;
+	transition: $variable;
+}
+
+@mixin border-radius($variable) {
+	-webkit-border-radius: $variable;
+	-moz-border-radius: $variable;
+	border-radius: $variable;
+}
+
+@mixin background-clip($variable) {
+	-webkit-background-clip: $variable;
+	-moz-background-clip: $variable;
+	background-clip: $variable;
+}
+
+@mixin animation-duration($time) {
+	-webkit-animation-duration: $time;
+	-moz-animation-duration: $time;
+	-ms-animation-duration: $time;
+	-o-animation-duration: $time;
+	animation-duration: $time;
+}
+
+@mixin animation-delay($time) {
+	-webkit-animation-delay: $time;
+	-moz-animation-delay: $time;
+	-ms-animation-delay: $time;
+	-o-animation-delay: $time;
+	animation-delay: $time;
+}
+
+@mixin scale($x, $y) {
+	-ms-transform: scale($x, $y);
+	-webkit-transform: scale($x, $y);
+	transform: scale($x, $y);
+}
+
+@mixin scaleX($x) {
+	-ms-transform: scale($x);
+	-webkit-transform: scale($x);
+	transform: scale($x);
+}
+
+@mixin scaleY($y) {
+	-ms-transform: scale($y);
+	-webkit-transform: scale($y);
+	transform: scale($y);
+}
+
+@mixin skewX($d) { /*$d = d deg*/
+	-ms-transform: skewX($d); /* IE 9 */
+  -webkit-transform: skewX($d); /* Safari */
+  transform: skewX($d);
+}
+
+@mixin blur($v) {
+	filter: blur($v);
+	-webkit-filter: blur($v);
+}

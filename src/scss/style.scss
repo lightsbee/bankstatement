@@ -1,0 +1,48 @@
+/* ================================================
+  ** IMPORT FONTS
+  include: font for text, typo, fonticons.
+  ================================================ */
+
+  @import 'lineicon';
+
+/*-----------*/
+
+/* ================================================
+  ** VARIABLES
+  color: text, button, etc.
+  size: font size, line height, button, input, etc.
+  ================================================ */
+
+  @import 'variables';
+
+/*-----------*/
+
+/* ================================================
+  ** MIXIN
+  vendor prefixes support all browsers, it can reuse
+  throughout the site.
+  ================================================ */
+
+  @import 'mixin';
+
+/*-----------*/
+
+
+/* ================================================
+  ** IMPORT COMPONENTS
+  all parts of site such as common, header, navbar,
+  menu, footer, etc.
+  ================================================ */
+
+  @import 'common';
+  @import 'menu';
+  @import 'home';
+  @import 'whyAggregator';
+  @import 'partner';
+  @import 'benefit';
+  @import 'getInTouch';
+  @import 'footer';
+  @import 'modalShowPartner';
+  @import 'modalShowBanks';
+
+/*-----------*/

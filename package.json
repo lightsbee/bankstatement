@@ -30,6 +30,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
+    "wingcss": "^1.0.0-beta",
     "yarn": "^0.24.5"
   }
 }

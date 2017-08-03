@@ -1,17 +1,4 @@
 <!--********************* Style Sheet + Fonts + JS*********************-->
 <% var version = new Date().getTime() %>
 
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/simplex-noise.min.js'></script>
-
-
-<script src="./assets/libjs/jquery-1.7.min.js" type="text/javascript"></script>
-<script src="./assets/libjs/slick.min.js" type="text/javascript"></script>
-
 <script type="text/javascript" src="public/js/action.min.js?version=<%= version %>"></script>
-
-<script>
-	function flipAction(self){	
-		var flipContainerParent = self.parentElement.parentElement.parentElement;	
-		flipContainerParent.classList.toggle('show-back-side');
-	}
-</script>

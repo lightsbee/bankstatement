@@ -3804,6 +3804,10 @@ wide-align@^1.1.0:
   dependencies:
     string-width "^1.0.2"
 
+wingcss@^1.0.0-beta:
+  version "1.0.0-beta"
+  resolved "https://registry.yarnpkg.com/wingcss/-/wingcss-1.0.0-beta.tgz#0d2ec3267e91b47c76eb3c02069765e7953ccc1d"
+
 wrap-ansi@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-2.1.0.tgz#d8fc3d284dd05794fe84973caecdd1cf824fdd85"

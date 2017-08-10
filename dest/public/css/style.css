@@ -23,8 +23,19 @@
 button, a {
   cursor: pointer; }
 
+input {
+  box-sizing: border-box; }
+
+input[type="email"]:focus, input[type="file"], input[type="number"], input[type="password"]:focus, input[type="search"]:focus, input[type="tel"], input[type="text"]:focus, select:focus textarea:focus, textarea[type="text"]:focus {
+  border-color: #2866AB; }
+
 body, html {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0; }
+
+.font-light {
+  font-weight: 100; }
 
 /* ================================================
   ** TERM AND CONDITION PAGE
@@ -62,4 +73,72 @@ button.btn-ghost, .btn-ghost {
     border-color: currentColor; }
 
 /******************************************/
+/* ================================================
+  ** LOGIN PAGE
+    ================================================ */
+.header-background {
+  background-color: #2866AB;
+  height: 222px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 2rem; }
+
+.card {
+  flex-direction: column;
+  overflow: hidden;
+  flex: 0 1 calc(50% - 0.5rem);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; }
+
+.card-header {
+  font-weight: 600;
+  margin: 0;
+  padding: 2rem 3rem 1rem; }
+
+.card-body {
+  padding: 0 3rem 2rem 3rem;
+  min-height: 100px; }
+
+.card-footer {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  background-color: #f6f8f8; }
+
+#block-login {
+  margin-top: 20px;
+  justify-content: center; }
+  #block-login > .card {
+    width: 870px;
+    max-width: 94vw;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    flex: inherit; }
+  #block-login .main-component {
+    padding: 50px 90px; }
+    #block-login .main-component .sign-in {
+      margin: inherit; }
+  #block-login .card-footer {
+    padding-right: 90px;
+    padding-left: 90px; }
+
+.qrCode {
+  width: 240px;
+  height: 240px; }
+
+.form-master {
+  margin-bottom: 12px; }
+
+/*****************************/
 /*-----------*/

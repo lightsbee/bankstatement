@@ -1,5 +1,82 @@
 /* ================================================
   ** LOGIN PAGE
     ================================================ */
+.header-background {
+	background-color: $primary-color;
+	height: 222px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
 
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+	margin-bottom: 2rem;
+}
+
+.card {
+	flex-direction: column;
+	overflow: hidden;
+	flex: 0 1 calc(50% - 0.5rem);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2rem;
+}
+
+.card-header {
+	font-weight: 600;
+  margin: 0;
+  padding: 2rem 3rem 1rem;
+}
+
+.card-body {
+	padding: 0 3rem 2rem 3rem;
+	min-height: 100px;
+}
+
+.card-footer {
+	display: flex;
+	align-items: stretch;
+	flex: 1;
+	background-color: #f6f8f8;
+}
+
+#block-login {
+	margin-top: 20px;
+	justify-content: center;
+
+	>.card {
+		width: 870px;
+		max-width: 94vw;
+		@include border-radius(3px);
+		background-color: #fff;
+		position: relative;
+		flex: inherit;
+	}
+
+	.main-component {
+		padding: 50px 90px;
+
+		.sign-in {
+			margin: inherit;
+		}
+	}
+
+	.card-footer {
+		padding-right: 90px;
+		padding-left: 90px;
+	}
+}
+
+.qrCode {
+	width: 240px;
+	height: 240px;
+}
+
+.form-master {
+	margin-bottom: 12px;
+}
 /*****************************/

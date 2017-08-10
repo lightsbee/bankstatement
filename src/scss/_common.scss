@@ -2,6 +2,20 @@ button, a {
 	cursor: pointer;
 }
 
+input {
+	box-sizing: border-box;
+}
+
+input[type="email"]:focus, input[type="file"], input[type="number"], input[type="password"]:focus, input[type="search"]:focus, input[type="tel"], input[type="text"]:focus, select:focus textarea:focus, textarea[type="text"]:focus {
+	border-color: $primary-color;
+}
+
 body, html {
 	background-color: #fafafa;
+	margin: 0;
+	padding: 0;
+}
+
+.font-light {
+	font-weight: 100;
 }

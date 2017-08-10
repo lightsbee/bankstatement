@@ -1,0 +1,65 @@
+/* ================================================
+  ** IMPORT FONTS
+  include: font for text, typo, fonticons.
+  ================================================ */
+/*-----------*/
+/* ================================================
+  ** VARIABLES
+  color: text, button, etc.
+  size: font size, line height, button, input, etc.
+  ================================================ */
+/*-----------*/
+/* ================================================
+  ** MIXIN
+  vendor prefixes support all browsers, it can reuse
+  throughout the site.
+  ================================================ */
+/*-----------*/
+/* ================================================
+  ** IMPORT COMPONENTS
+  all parts of site such as common, header, navbar,
+  menu, footer, etc.
+  ================================================ */
+button, a {
+  cursor: pointer; }
+
+body, html {
+  background-color: #fafafa; }
+
+/* ================================================
+  ** TERM AND CONDITION PAGE
+    ================================================ */
+#term-and-condition > .content {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 120px; }
+
+#term-and-condition > .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 10% 20px 0;
+  background-color: #ECF0F1; }
+
+.btn-primary {
+  background: #2866AB;
+  border: 1.5px;
+  border-style: solid;
+  border-color: #2866AB;
+  margin: 0 6px; }
+  .btn-primary:hover {
+    background: #225691;
+    border-color: #225691; }
+
+button.btn-ghost, .btn-ghost {
+  border: 1.5px solid currentColor;
+  color: rgba(0, 0, 0, 0.3); }
+  button.btn-ghost:hover, .btn-ghost:hover {
+    color: #2866AB;
+    border-color: currentColor; }
+
+/******************************************/
+/*-----------*/

@@ -1,0 +1,51 @@
+/* ================================================
+  ** TERM AND CONDITION PAGE
+    ================================================ */
+
+#term-and-condition {
+	>.content {
+		width: 90vw;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 20px;
+		margin-bottom: 120px;
+	}
+
+	>.footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 20px 10% 20px 0;
+		background-color: $gray-light;
+	}
+}
+
+.btn-primary {
+	background: $primary-color;
+	border: 1.5px;
+	border-style: solid;
+	border-color: $primary-color;
+	margin: 0 6px;
+
+	&:hover {
+		background: $primary-color-hover;
+		border-color:  $primary-color-hover;
+	}
+}
+
+button.btn-ghost {
+	border: 1.5px solid currentColor;
+	color: $ghost-normal-color;
+
+	&:hover {
+		color: $primary-color;
+		border-color: currentColor;
+	}
+}
+
+.btn-ghost {
+	@extend button.btn-ghost;
+}
+
+/******************************************/

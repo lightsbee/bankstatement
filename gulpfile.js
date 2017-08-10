@@ -14,22 +14,22 @@ var imagemin = require('gulp-imagemin');
 gulp.task('ejs', function() {
   return gulp.src('./src/views/*.ejs')
     .pipe(ejs({},{}, {ext:'.html'}).on('error', gutil.log))
-    .pipe(ejsmin({removeComment: true}))
-    .pipe(minifyejs())
+    // .pipe(ejsmin({removeComment: true}))
+    // .pipe(minifyejs())
     .pipe(gulp.dest("./dest"));
 });
 
 gulp.task('sass', function() {
   return gulp.src('./src/scss/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(rename({suffix: '.min'}))
+    .pipe(sass().on('error', sass.logError))
+    // .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dest/public/css'));
 });
 
 gulp.task('minJs', function() {
   return gulp.src('./src/js/*.js')
     .pipe(jsmin())
-    .pipe(rename({suffix: '.min'}))
+    // .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dest/public/js'));
 });
 

@@ -44,8 +44,9 @@ body, html {
   width: 90vw;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
-  margin-bottom: 120px; }
+  padding: 50px;
+  margin-bottom: 120px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
 
 #term-and-condition > .footer {
   position: fixed;

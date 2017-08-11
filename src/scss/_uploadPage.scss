@@ -1,0 +1,88 @@
+/* ================================================
+  ** UPLOAD PAGE
+    ================================================ */
+
+#block-upload {
+	
+	>.col, [class*=" col-"], [class^=col-] {
+		margin: 0;
+	}
+
+	.side-bar {
+		background-color: $dark-color;
+		height: 100vh;
+		margin-top: 0;
+
+		&::before {
+			content: '';
+			background-color: $semi-dark-color;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 70px;
+			height: 100vh; 
+		}
+		
+		>* {
+			position: relative;
+			color: #fafafa;
+			height: 70px;
+			line-height: 70px;
+
+			.fa {
+				vertical-align: -4px;
+				margin: 0 35px 0 15px;
+
+				&+span {
+					font-weight: 100;
+				}
+			}
+
+			&:hover {
+				background-color: rgba(0,0,0,.2);
+				.fa {
+					color: $primary-color-light;
+				}
+			}
+		}
+	}
+
+	.header {
+		background-color: #f4f4f4;
+		padding: 12px 20px;
+	}
+}
+
+.dropzone {
+	border: 2px dashed $primary-color;
+  border-radius: 5px;
+  background: white;
+  min-height: 100px;
+  padding: 0px 54px;
+  margin: 20px auto;
+  cursor: pointer;
+
+  .dz-message {
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  &.dz-clickable {
+  	.dz-message, .dz-message * {
+  		cursor: pointer;
+  	}
+
+  	.dz-message {
+  		.note {
+  			font-size: 0.8em;
+  			font-weight: 200;
+  			display: block;
+  			margin-top: 1.4rem;
+  		}
+  	}
+  }
+}
+
+.dropzone, .dropzone * {
+  box-sizing: border-box;
+}

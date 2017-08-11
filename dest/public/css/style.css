@@ -142,4 +142,63 @@ button.btn-ghost, .btn-ghost {
   margin-bottom: 12px; }
 
 /*****************************/
+/* ================================================
+  ** UPLOAD PAGE
+    ================================================ */
+#block-upload > .col, #block-upload [class*=" col-"], #block-upload [class^=col-] {
+  margin: 0; }
+
+#block-upload .side-bar {
+  background-color: #272B34;
+  height: 100vh;
+  margin-top: 0; }
+  #block-upload .side-bar::before {
+    content: '';
+    background-color: #30333E;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 100vh; }
+  #block-upload .side-bar > * {
+    position: relative;
+    color: #fafafa;
+    height: 70px;
+    line-height: 70px; }
+    #block-upload .side-bar > * .fa {
+      vertical-align: -4px;
+      margin: 0 35px 0 15px; }
+      #block-upload .side-bar > * .fa + span {
+        font-weight: 100; }
+    #block-upload .side-bar > *:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+      #block-upload .side-bar > *:hover .fa {
+        color: #4588d3; }
+
+#block-upload .header {
+  background-color: #f4f4f4;
+  padding: 12px 20px; }
+
+.dropzone {
+  border: 2px dashed #2866AB;
+  border-radius: 5px;
+  background: white;
+  min-height: 100px;
+  padding: 0px 54px;
+  margin: 20px auto;
+  cursor: pointer; }
+  .dropzone .dz-message {
+    text-align: center;
+    margin: 2em 0; }
+  .dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {
+    cursor: pointer; }
+  .dropzone.dz-clickable .dz-message .note {
+    font-size: 0.8em;
+    font-weight: 200;
+    display: block;
+    margin-top: 1.4rem; }
+
+.dropzone, .dropzone * {
+  box-sizing: border-box; }
+
 /*-----------*/

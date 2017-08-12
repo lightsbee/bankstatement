@@ -43,6 +43,12 @@ button.btn-ghost {
 		color: $primary-color;
 		border-color: currentColor;
 	}
+
+	&.red {
+		&:hover {
+			color: $danger-color;
+		}
+	}
 }
 
 .btn-ghost {

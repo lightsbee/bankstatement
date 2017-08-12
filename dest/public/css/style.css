@@ -506,6 +506,8 @@ button.btn-ghost, .btn-ghost {
   button.btn-ghost:hover, .btn-ghost:hover {
     color: #2866AB;
     border-color: currentColor; }
+  button.btn-ghost.red:hover, .red.btn-ghost:hover {
+    color: #F38181; }
 
 /******************************************/
 /* ================================================
@@ -579,14 +581,14 @@ button.btn-ghost, .btn-ghost {
 /* ================================================
   ** UPLOAD PAGE
     ================================================ */
-#block-upload > .col, #block-upload [class*=" col-"], #block-upload [class^=col-] {
+#block-upload > .col, #block-progress-upload > .col, #block-error-upload > .col, #block-upload [class*=" col-"], #block-progress-upload [class*=" col-"], #block-error-upload [class*=" col-"], #block-upload [class^=col-], #block-progress-upload [class^=col-], #block-error-upload [class^=col-] {
   margin: 0; }
 
-#block-upload .side-bar {
+#block-upload .side-bar, #block-progress-upload .side-bar, #block-error-upload .side-bar {
   background-color: #272B34;
   height: 100vh;
   margin-top: 0; }
-  #block-upload .side-bar::before {
+  #block-upload .side-bar::before, #block-progress-upload .side-bar::before, #block-error-upload .side-bar::before {
     content: '';
     background-color: #30333E;
     position: absolute;
@@ -594,24 +596,24 @@ button.btn-ghost, .btn-ghost {
     top: 0;
     width: 70px;
     height: 100vh; }
-  #block-upload .side-bar > * {
+  #block-upload .side-bar > *, #block-progress-upload .side-bar > *, #block-error-upload .side-bar > * {
     position: relative;
     color: #fafafa;
     height: 70px;
     line-height: 70px; }
-    #block-upload .side-bar > * .fa {
+    #block-upload .side-bar > * .fa, #block-progress-upload .side-bar > * .fa, #block-error-upload .side-bar > * .fa {
       vertical-align: -4px;
       margin: 0 35px 0 15px; }
-    #block-upload .side-bar > *:hover {
+    #block-upload .side-bar > *:hover, #block-progress-upload .side-bar > *:hover, #block-error-upload .side-bar > *:hover {
       background-color: rgba(0, 0, 0, 0.2); }
-      #block-upload .side-bar > *:hover .fa {
+      #block-upload .side-bar > *:hover .fa, #block-progress-upload .side-bar > *:hover .fa, #block-error-upload .side-bar > *:hover .fa {
         color: #4588d3; }
 
-#block-upload .header {
+#block-upload .header, #block-progress-upload .header, #block-error-upload .header {
   background-color: #f4f4f4;
   padding: 12px 20px; }
 
-#block-upload .btn-primary {
+#block-upload .btn-primary, #block-progress-upload .btn-primary, #block-error-upload .btn-primary {
   margin-right: 0; }
 
 .dropzone {
@@ -635,5 +637,10 @@ button.btn-ghost, .btn-ghost {
 
 .dropzone, .dropzone * {
   box-sizing: border-box; }
+
+#block-error-upload .content {
+  margin-top: 150px; }
+  #block-error-upload .content h1 {
+    margin-top: 10px; }
 
 /*-----------*/

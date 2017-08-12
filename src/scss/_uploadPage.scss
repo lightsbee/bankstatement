@@ -3,7 +3,7 @@
     ================================================ */
 
 #block-upload {
-	
+
 	>.col, [class*=" col-"], [class^=col-] {
 		margin: 0;
 	}
@@ -20,9 +20,9 @@
 			left: 0;
 			top: 0;
 			width: 70px;
-			height: 100vh; 
+			height: 100vh;
 		}
-		
+
 		>* {
 			position: relative;
 			color: #fafafa;
@@ -33,9 +33,6 @@
 				vertical-align: -4px;
 				margin: 0 35px 0 15px;
 
-				&+span {
-					font-weight: 100;
-				}
 			}
 
 			&:hover {
@@ -50,6 +47,10 @@
 	.header {
 		background-color: #f4f4f4;
 		padding: 12px 20px;
+	}
+
+	.btn-primary {
+		margin-right: 0;
 	}
 }
 

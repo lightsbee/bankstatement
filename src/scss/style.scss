@@ -3,7 +3,7 @@
   include: font for text, typo, fonticons.
   ================================================ */
 
-  
+  @import "dropzone";
 
 /*-----------*/
 
@@ -37,5 +37,7 @@
   @import 'termAndCondition';
   @import 'loginPage';
   @import 'uploadPage';
+  @import 'progressPage';
+  @import 'errorPage';
 
 /*-----------*/

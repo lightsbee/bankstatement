@@ -1,19 +1,6 @@
 <div class="row" id="block-upload">
 
-	<div class="col-3 side-bar">
-		<div class="login-id">
-			<i class="fa fa-user-circle-o fa-2x fa-fw" aria-hidden="true"></i>
-			<span>#lightsbee</span>
-		</div>
-		<div class="login-id">
-			<i class="fa fa-address-card-o fa-2x fa-fw" aria-hidden="true"></i>
-			<span>Account Id</span>
-		</div>
-		<div class="login-id">
-			<i class="fa fa-money fa-2x fa-fw" aria-hidden="true"></i>
-			<span>Balance</span>
-		</div>
-	</div>
+	<%- include("./_sideBar") %>
 
 	<div class="col-9">
 		<div class="header right">
@@ -29,7 +16,7 @@
 				<form action="/file-upload" class="dropzone" id="my-awesome-dropzone" >
 					<div class="dz-message needsclick">
 					  Drop files here or click to upload.<br>
-					  <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+					  <span class="note needsclick">(This is just a <strong>demo</strong> dropzone.)
 					</div>
 					<div class="fallback">
 					  <input name="file" type="file" multiple />

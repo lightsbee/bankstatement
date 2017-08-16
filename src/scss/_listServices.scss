@@ -1,0 +1,48 @@
+#list-services {
+	@extend #block-upload;
+
+	.content {
+		padding: 30px 0;
+	}
+
+	.all-banks {
+		min-height: 130px;
+		background-color: #fff;
+		@include border-radius(4px);
+		@include box-shadow(1px 2px 10px 0 $primary-color-shadow-light);
+		padding: 2em;
+
+		.bank-list {
+			list-style-type: none;
+			padding: 0;
+
+			>li {
+				padding: 10px;
+				background-color: #fafafa;
+				@include border-radius(3px);
+				margin-bottom: .6%;
+				height: 50px;
+				display: inline-block;
+				
+		    width: 30%;
+		    position: relative;
+		    margin-right: .6%;
+				vertical-align: top;
+				
+				&:hover {
+					background-color: #f4f4f4;
+				}
+
+				>p {
+					position: absolute;
+					top: 50%;
+					width: calc(100% - 70px);
+					left: 65px;
+					margin: 0;
+					@include translateY(-50%);
+				}
+			}
+		}
+	}
+
+}

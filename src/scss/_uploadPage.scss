@@ -12,6 +12,8 @@
 		background-color: $dark-color;
 		height: 100vh;
 		margin-top: 0;
+		position: fixed;
+		width: 25%;
 
 		&::before {
 			content: '';
@@ -28,7 +30,8 @@
 			position: relative;
 			color: #fafafa;
 			height: 70px;
-			line-height: 70px;
+			display: flex;
+			align-items: center;
 
 			.fa {
 				vertical-align: -4px;

@@ -581,14 +581,16 @@ button.btn-ghost, .btn-ghost {
 /* ================================================
   ** UPLOAD PAGE
     ================================================ */
-#block-upload > .col, #block-progress-upload > .col, #block-error-upload > .col, #block-upload [class*=" col-"], #block-progress-upload [class*=" col-"], #block-error-upload [class*=" col-"], #block-upload [class^=col-], #block-progress-upload [class^=col-], #block-error-upload [class^=col-] {
+#block-upload > .col, #block-progress-upload > .col, #block-error-upload > .col, #list-services > .col, #block-upload [class*=" col-"], #block-progress-upload [class*=" col-"], #block-error-upload [class*=" col-"], #list-services [class*=" col-"], #block-upload [class^=col-], #block-progress-upload [class^=col-], #block-error-upload [class^=col-], #list-services [class^=col-] {
   margin: 0; }
 
-#block-upload .side-bar, #block-progress-upload .side-bar, #block-error-upload .side-bar {
+#block-upload .side-bar, #block-progress-upload .side-bar, #block-error-upload .side-bar, #list-services .side-bar {
   background-color: #272B34;
   height: 100vh;
-  margin-top: 0; }
-  #block-upload .side-bar::before, #block-progress-upload .side-bar::before, #block-error-upload .side-bar::before {
+  margin-top: 0;
+  position: fixed;
+  width: 25%; }
+  #block-upload .side-bar::before, #block-progress-upload .side-bar::before, #block-error-upload .side-bar::before, #list-services .side-bar::before {
     content: '';
     background-color: #30333E;
     position: absolute;
@@ -599,24 +601,25 @@ button.btn-ghost, .btn-ghost {
     box-shadow: 1px 0 30px 0px rgba(0, 0, 0, 0.05);
     -webkit-box-shadow: 1px 0 30px 0px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 1px 0 30px 0px rgba(0, 0, 0, 0.05); }
-  #block-upload .side-bar > *, #block-progress-upload .side-bar > *, #block-error-upload .side-bar > * {
+  #block-upload .side-bar > *, #block-progress-upload .side-bar > *, #block-error-upload .side-bar > *, #list-services .side-bar > * {
     position: relative;
     color: #fafafa;
     height: 70px;
-    line-height: 70px; }
-    #block-upload .side-bar > * .fa, #block-progress-upload .side-bar > * .fa, #block-error-upload .side-bar > * .fa {
+    display: flex;
+    align-items: center; }
+    #block-upload .side-bar > * .fa, #block-progress-upload .side-bar > * .fa, #block-error-upload .side-bar > * .fa, #list-services .side-bar > * .fa {
       vertical-align: -4px;
       margin: 0 35px 0 15px; }
-    #block-upload .side-bar > *:hover, #block-progress-upload .side-bar > *:hover, #block-error-upload .side-bar > *:hover {
+    #block-upload .side-bar > *:hover, #block-progress-upload .side-bar > *:hover, #block-error-upload .side-bar > *:hover, #list-services .side-bar > *:hover {
       background-color: rgba(0, 0, 0, 0.2); }
-      #block-upload .side-bar > *:hover .fa, #block-progress-upload .side-bar > *:hover .fa, #block-error-upload .side-bar > *:hover .fa {
+      #block-upload .side-bar > *:hover .fa, #block-progress-upload .side-bar > *:hover .fa, #block-error-upload .side-bar > *:hover .fa, #list-services .side-bar > *:hover .fa {
         color: #4588d3; }
 
-#block-upload .header, #block-progress-upload .header, #block-error-upload .header {
+#block-upload .header, #block-progress-upload .header, #block-error-upload .header, #list-services .header {
   background-color: #f4f4f4;
   padding: 12px 20px; }
 
-#block-upload .btn-primary, #block-progress-upload .btn-primary, #block-error-upload .btn-primary {
+#block-upload .btn-primary, #block-progress-upload .btn-primary, #block-error-upload .btn-primary, #list-services .btn-primary {
   margin-right: 0; }
 
 .dropzone {
@@ -698,5 +701,46 @@ button.btn-ghost, .btn-ghost {
   margin-top: 150px; }
   #block-error-upload .content h1 {
     margin-top: 10px; }
+
+#list-services .content {
+  padding: 30px 0; }
+
+#list-services .all-banks {
+  min-height: 130px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 10px 0 rgba(40, 102, 171, 0.1);
+  -webkit-box-shadow: 1px 2px 10px 0 rgba(40, 102, 171, 0.1);
+  -moz-box-shadow: 1px 2px 10px 0 rgba(40, 102, 171, 0.1);
+  padding: 2em; }
+  #list-services .all-banks .bank-list {
+    list-style-type: none;
+    padding: 0; }
+    #list-services .all-banks .bank-list > li {
+      padding: 10px;
+      background-color: #fafafa;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      margin-bottom: .6%;
+      height: 50px;
+      display: inline-block;
+      width: 30%;
+      position: relative;
+      margin-right: .6%;
+      vertical-align: top; }
+      #list-services .all-banks .bank-list > li:hover {
+        background-color: #f4f4f4; }
+      #list-services .all-banks .bank-list > li > p {
+        position: absolute;
+        top: 50%;
+        width: calc(100% - 70px);
+        left: 65px;
+        margin: 0;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%); }
 
 /*-----------*/

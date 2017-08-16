@@ -581,16 +581,16 @@ button.btn-ghost, .btn-ghost {
 /* ================================================
   ** UPLOAD PAGE
     ================================================ */
-#block-upload > .col, #block-progress-upload > .col, #block-error-upload > .col, #list-services > .col, #block-upload [class*=" col-"], #block-progress-upload [class*=" col-"], #block-error-upload [class*=" col-"], #list-services [class*=" col-"], #block-upload [class^=col-], #block-progress-upload [class^=col-], #block-error-upload [class^=col-], #list-services [class^=col-] {
+#block-upload > .col, #block-progress-upload > .col, #block-error-upload > .col, #list-services > .col, #account-done > .col, #block-upload [class*=" col-"], #block-progress-upload [class*=" col-"], #block-error-upload [class*=" col-"], #list-services [class*=" col-"], #account-done [class*=" col-"], #block-upload [class^=col-], #block-progress-upload [class^=col-], #block-error-upload [class^=col-], #list-services [class^=col-], #account-done [class^=col-] {
   margin: 0; }
 
-#block-upload .side-bar, #block-progress-upload .side-bar, #block-error-upload .side-bar, #list-services .side-bar {
+#block-upload .side-bar, #block-progress-upload .side-bar, #block-error-upload .side-bar, #list-services .side-bar, #account-done .side-bar {
   background-color: #272B34;
   height: 100vh;
   margin-top: 0;
   position: fixed;
   width: 25%; }
-  #block-upload .side-bar::before, #block-progress-upload .side-bar::before, #block-error-upload .side-bar::before, #list-services .side-bar::before {
+  #block-upload .side-bar::before, #block-progress-upload .side-bar::before, #block-error-upload .side-bar::before, #list-services .side-bar::before, #account-done .side-bar::before {
     content: '';
     background-color: #30333E;
     position: absolute;
@@ -601,25 +601,25 @@ button.btn-ghost, .btn-ghost {
     box-shadow: 1px 0 30px 0px rgba(0, 0, 0, 0.05);
     -webkit-box-shadow: 1px 0 30px 0px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 1px 0 30px 0px rgba(0, 0, 0, 0.05); }
-  #block-upload .side-bar > *, #block-progress-upload .side-bar > *, #block-error-upload .side-bar > *, #list-services .side-bar > * {
+  #block-upload .side-bar > *, #block-progress-upload .side-bar > *, #block-error-upload .side-bar > *, #list-services .side-bar > *, #account-done .side-bar > * {
     position: relative;
     color: #fafafa;
     height: 70px;
     display: flex;
     align-items: center; }
-    #block-upload .side-bar > * .fa, #block-progress-upload .side-bar > * .fa, #block-error-upload .side-bar > * .fa, #list-services .side-bar > * .fa {
+    #block-upload .side-bar > * .fa, #block-progress-upload .side-bar > * .fa, #block-error-upload .side-bar > * .fa, #list-services .side-bar > * .fa, #account-done .side-bar > * .fa {
       vertical-align: -4px;
       margin: 0 35px 0 15px; }
-    #block-upload .side-bar > *:hover, #block-progress-upload .side-bar > *:hover, #block-error-upload .side-bar > *:hover, #list-services .side-bar > *:hover {
+    #block-upload .side-bar > *:hover, #block-progress-upload .side-bar > *:hover, #block-error-upload .side-bar > *:hover, #list-services .side-bar > *:hover, #account-done .side-bar > *:hover {
       background-color: rgba(0, 0, 0, 0.2); }
-      #block-upload .side-bar > *:hover .fa, #block-progress-upload .side-bar > *:hover .fa, #block-error-upload .side-bar > *:hover .fa, #list-services .side-bar > *:hover .fa {
+      #block-upload .side-bar > *:hover .fa, #block-progress-upload .side-bar > *:hover .fa, #block-error-upload .side-bar > *:hover .fa, #list-services .side-bar > *:hover .fa, #account-done .side-bar > *:hover .fa {
         color: #4588d3; }
 
-#block-upload .header, #block-progress-upload .header, #block-error-upload .header, #list-services .header {
+#block-upload .header, #block-progress-upload .header, #block-error-upload .header, #list-services .header, #account-done .header {
   background-color: #f4f4f4;
   padding: 12px 20px; }
 
-#block-upload .btn-primary, #block-progress-upload .btn-primary, #block-error-upload .btn-primary, #list-services .btn-primary {
+#block-upload .btn-primary, #block-progress-upload .btn-primary, #block-error-upload .btn-primary, #list-services .btn-primary, #account-done .btn-primary {
   margin-right: 0; }
 
 .dropzone {
@@ -742,5 +742,20 @@ button.btn-ghost, .btn-ghost {
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%); }
+
+#account-done .content {
+  padding: 30px 0; }
+  #account-done .content .value {
+    margin: 0 0 15px;
+    color: #2866AB; }
+  #account-done .content .form-master {
+    padding: 5px 25px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 1px 2px 10px 0 rgba(40, 102, 171, 0.1);
+    -webkit-box-shadow: 1px 2px 10px 0 rgba(40, 102, 171, 0.1);
+    -moz-box-shadow: 1px 2px 10px 0 rgba(40, 102, 171, 0.1); }
 
 /*-----------*/
